@@ -3,9 +3,13 @@ package org.example.ws.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Post {
@@ -24,6 +28,8 @@ public class Post {
     
     private String userName;
     
+    @JoinColumn (name="id")
+    @OneToMany(mappedBy = "comment", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Comment> comment;
     
 	public Long getId() {
