@@ -35,6 +35,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-remote-shell')
 	compile('org.springframework.boot:spring-boot-starter-security')
+	compile('joda-time:joda-time')
 	runtime('org.hsqldb:hsqldb')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
@@ -50,16 +51,4 @@ eclipse {
 
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.9'
-}
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId 'org.gradle.sample'
-            artifactId 'project1-sample'
-            version '1.1'
-
-            from components.java
-        }
-    }
 }

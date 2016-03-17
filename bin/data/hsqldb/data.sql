@@ -1,3 +1,20 @@
-INSERT INTO POST (name, resume) VALUES ('Bilel', 'Cette installation implique l’arrêt (définitif) de DEF sur l’environnement de R7');
-INSERT INTO POST (name, resume) VALUES ('Paul!', 'La livraison sur l’environnement de R7 du lot 3 de Gestion Commerciale est prévue mardi 15 mars.');
-INSERT INTO POST (name, resume) VALUES ('Ahmed!', 'Merci d’aviser toute personne qui ne serait pas destinataire de ce mail');
+INSERT INTO POST (name, resume, publishDate) 
+VALUES (
+'Bilel', 
+'Cette installation implique R7', 
+'2010-01-01 00:00:00' 
+);
+
+INSERT INTO POST (name, resume, publishDate) 
+VALUES (
+'Paul!', 
+'La livraison sur environnement de R7 du lot 3.', 
+'2010-01-01 00:00:00' 
+);
+
+INSERT INTO POST (name, resume, publishDate) 
+VALUES (
+'Ahmed!', 
+'Merci aviser toute personne qui ne serait pas destinataire de ce mail', 
+'2010-01-01 00:00:00' 
+);
