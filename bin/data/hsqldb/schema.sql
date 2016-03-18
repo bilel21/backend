@@ -5,6 +5,8 @@ CREATE TABLE POST (
   name VARCHAR(100) NOT NULL,
   resume VARCHAR(4000) NOT NULL,
   publishDate DATETIME,
+  content VARCHAR(10000) NOT NULL,
+  userName VARCHAR(100) NOT NULL,
   PRIMARY KEY(id)
 );
 
